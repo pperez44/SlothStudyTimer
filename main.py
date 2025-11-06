@@ -6,12 +6,16 @@ sg.theme('SandyBeach')
 # Define compact window contents (single-cycle model)
 timer_row = [sg.Text('00:00', key='-TIME-', font=('Consolas', 40, 'bold'), justification='center')]
 top_button_row = [
+    sg.Push(),
     sg.Button('Study', key='-STUDY-', button_color=('white', 'green')),
     sg.Button('Break', key='-REST-', button_color=('white', 'green')),
+    sg.Push(),
 ]
 bottom_button_row = [
+    sg.Push(),
     sg.Button('Pause', key='-PAUSE-', button_color=('white', 'red')),
     sg.Button('Reset', key='-RESET-', button_color=('white', 'red')),
+    sg.Push(),
 ]
 
 layout = [
